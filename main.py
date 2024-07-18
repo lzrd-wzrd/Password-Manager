@@ -5,8 +5,6 @@ import pyperclip
 import pandas
 import os
 
-# ---------------------------- PASSWORD GENERATOR ------------------------------- #
-
 
 def password_generator():
     letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u',
@@ -30,15 +28,7 @@ def password_generator():
 
     password_entry.insert(0, password)
     pyperclip.copy(password)
-
-# ---------------------------- UPDATE PASSWORD ----------------------------- #
-
-# def update_password():
-#     with open(file='password_data.txt') as data_file:
-#         data_list = data_file.readlines()
-#         print(data_list)
-
-# ---------------------------- SAVE PASSWORD ------------------------------- #
+    
 
 def save():
 
@@ -84,8 +74,8 @@ def save():
             password_entry.delete(0, END)
             email_username_entry.delete(0, END)
 
-# ---------------------------- UI SETUP ------------------------------- #
 
+# UI Setup
 
 window = Tk()
 window.title('Password Manager')
